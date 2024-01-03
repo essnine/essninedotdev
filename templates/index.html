@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- import the webpage's javascript file -->
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+
+<body onload="initPage();" class="">
+    <div class="parentBody" id="parentBody">
+        <div class="flex-container mainBody" id="mainBody">
+            <div class="flex-item" id="mainBodyDiv">
+                <p>Updated Wednesday 21 December 2023</p>
+<p>Hi! Suraj here.</p>
+<p><strong>Right now: I've just finished my time in the Fall 2 batch at <a href="https://recurse.com">Recurse Center</a>. I'm looking for a job. You can find my resume on <a href="https://www.linkedin.com/in/suraj-zala-52a805111/">LinkedIn</a>.</strong></p>
+<p>I'm a backend web developer. Over the past few years, I've worked on:</p>
+<ul>
+<li>a CRM/CSM tool with integrated chatbot</li>
+<li>lots of RESTful APIs</li>
+<li>deploying web services on GCP, AWS</li>
+<li>debugging funny issues with (unfortunately) distributed systems (or microservice architectures, whatever)</li>
+<li>cool automations for an very large enterprise's internal search engine</li>
+<li>a rule engine for a well-known FinTech corp</li>
+<li>planning and designing architecture for MVPs for clients</li>
+<li>training and mentoring junior devs</li>
+</ul>
+<p>Besides the large enterprise's search engine part, all the work I've listed was at startups, either as an employee or as a contractor or part of a consulting team.
+I have an eye for debugging, I like designing solutions that aren't more complex than absolutely necessary, and I'm all for being product- and customer-oriented.
+I am not particularly attached to a particular stack or language, and I'm open to learning new tools/stacks for building good tech.</p>
+<p>You can <a href="mailto:hello@essnine.dev">email</a> me, reach out/see my resume on <a href="https://www.linkedin.com/in/suraj-zala-52a805111/">linkedin</a>, or ping me on <a href="https://twitter.com/essninedotdev">twitter</a>.</p>
+<p><em>P.S. The site nav is kinda broken right now. I'm working on fixing that.</em></p>
+            </div>
+            <div>
+                <p class="affirmationBox" id="affirmationBox" title="A little cheering-up for you :)">loading...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="footer" id="footer">
+    <div class="flex-container footerMaster" id="footerMaster">
+        <div class="flex-container footerDarkMode">
+            <div class="flex-item toggleDarkMode"
+                title="I store no cookies. The night mode toggle is basic JS time checking. This site is mostly built from scratch.">
+                <label class="switch">
+                    <input type="checkbox" onclick="goDark(true)" id="goDarkToggle">
+                    <span class="slider round"></span>
+                </label>
+                <label class="toggleDarkText">
+                    🌙&nbsp
+                </label>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

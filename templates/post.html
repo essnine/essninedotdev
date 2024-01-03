@@ -1,0 +1,9 @@
+<div class="site-nav">
+    {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{item.caption}}</li>
+    {% endfor %}
+</div>
+
+<div class="site-post-content">
+    {{% page_text %}}
+</div>
