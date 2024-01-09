@@ -64,6 +64,9 @@ function goDark(setInMemory = false) {
     var affirmationElement = document.getElementById("affirmationBox");
     affirmationElement.classList.toggle("dark-mode");
 
+    var siteNavElement = document.getElementById("siteNav");
+    siteNavElement.classList.toggle("dark-mode");
+
     if (setInMemory == true) {
         if (affirmationElement.classList.contains("dark-mode")) {
             darkMode = true;
